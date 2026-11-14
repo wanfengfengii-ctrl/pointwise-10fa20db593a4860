@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-c", "import sqlite3, sys; assert sys.version_info >= (3, 8); assert sqlite3.sqlite_version_info >= (3, 15, 0)"]
+  ],
+  "verify": ["python3", "verify.py"],
+  "demo": ["python3", "demo.py"]
+}
